@@ -8,6 +8,8 @@ provider "aws" {
 resource "aws_s3_bucket" "terraform_backend" {
   bucket = "my-cool-bucket-lukeresume-terraform" # <-- REPLACE with a globally unique name!
 
+  force_destroy = true
+
   # Enforce public access block for security
   acl = "private" 
 
@@ -46,4 +48,10 @@ resource "aws_dynamodb_table" "terraform_locks" {
 
 module "backend" {
   source = "./modules/backend"
+}
+
+module "frontend" {
+  source      = "./modules/frontend"
+  domain_name = "example.com" # Placeholder: Terraform needs a value, even if commented out.
+  api_url     = "https://3cugs71ej9.execute-api.us-east-1.amazonaws.com/visits" # YOUR actual API URL
 }
