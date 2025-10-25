@@ -3,14 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luke's Cloud Resume</title>
+    <title>Luke Zhang - Cloud Resume</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Luke's Cloud Resume Challenge</h1>
-        <p>This page has been viewed <span id="counter">---</span> times.</p>
-    </div>
+    <header>
+        <div class="header-container">
+            <h1>Luke Zhang</h1>
+            <p>AWS Certified Solutions Architect Professional | Software Engineer</p>
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i> l_zhang18@hotmail.com</span>
+                <span><i class="fas fa-map-marker-alt"></i> Toronto</span>
+                <a href="https://www.linkedin.com/in/lz729/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/lukzhang" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="counter-section">
+            <p>This Cloud Resume has been viewed <span id="counter">---</span> times since deployment.</p>
+        </section>
+
+        <section class="education-section">
+            <h2><i class="fas fa-graduation-cap"></i> Education & Certifications</h2>
+            <ul>
+                <li><strong>AWS Certified Solutions Architect Professional, SAP-C02</strong></li>
+                <li>AWS Certified Solutions Architect Associate, SAA-C03.</li>
+                <li>Microsoft Certified: Azure Fundamentals, AZ-900.</li>
+                <li>B.A. Computing and Information Systems, Athabasca University.</li>
+            </ul>
+        </section>
+
+        <section class="experience-section">
+            <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+
+            <div class="job-entry">
+                <h3>Software Engineer (Contract) <span>Athena AI</span></h3>
+                <p class="meta">Toronto, ON | July 2025 – Sep 2025</p>
+                <ul>
+                    <li>Integrated the AthenaAI chatbot with Google Chat, enabling support for rich message types (images, etc).</li>
+                    <li>Configured Google Cloud Platform (GCP) services (organization setup, IAM roles, service accounts, Oauth2).</li>
+                    <li>Strengthened cloud security by applying least-privilege IAM policies and JSON key–based authentication flows.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <h3>Software Engineer <span>Meraki IT Group</span></h3>
+                <p class="meta">Toronto, ON | Jan 2023 – Aug 2024</p>
+                <ul>
+                    <li>Delivered government AGLC licensing platform (aglc.ca) in 12 months as the sole developer under a tech lead.</li>
+                    <li>Designed and built backend (MSSQL, Oracle, JavaScript, AMANDA) while aligning with government compliance.</li>
+                    <li>Translated complex regulatory business rules with 3 CGI BSAs into automated validations.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <h3>Software Engineer <span>Telus</span></h3>
+                <p class="meta">Toronto, ON | 2020 - 2023</p>
+                <ul>
+                    <li>Developed a Spring Boot microservice for enterprise role retrieval serving 100K+ employees.</li>
+                    <li>Integrated IAM tools (SAML, OAuth2/OIDC, LDAP) with PingFederate for secure cloud authentication.</li>
+                    <li>Executed AWS → GCP migration of IAM services (including PingFederate stack) with zero downtime, ensuring hybrid LDAP connectivity.</li>
+                    <li>Automated CI/CD pipelines in Jenkins, enabling staged rollouts across AWS environments.</li>
+                    <li>Enhanced operational stability by using Splunk dashboards to actively monitor and analyze overnight traffic and key security metrics, enabling rapid identification of performance dips or anomalous activity.</li>
+                    <li>Created terraform to deploy Kong API gateway for use across cloud platforms (AWS, GCP).</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <h3>Software Engineer <span>Surge ERP</span></h3>
+                <p class="meta">Toronto, ON | 2019 - 2020</p>
+                <ul>
+                    <li>Engineered Django backend on AWS ECS + Docker with GraphQL and RDS MySQL to support sale of thousands of Ethereum assets. Configured AWS compute (EC2, Lambda) and optimized costs, reducing AWS spend by 25%.</li>
+                    <li>Integrated mobile apps with backend (C#, NodeJS) for Cryptomibs.io, increasing accessibility by 60% and driving traffic/sales.</li>
+                    <li>Designed CI/CD workflows for containerized services to accelerate feature deployment.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <h3>Trader <span>Select Vantage</span></h3>
+                <p class="meta">Toronto, ON | 2015 - 2017</p>
+                <ul>
+                    <li>Transitioned from trader to developer by self-teaching C# and R to automate and backtest trading strategies.</li>
+                    <li>Automated order execution by sending UDP trade requests to back office systems.</li>
+                    <li>Applied statistical analysis in R to identify and implement profitable trade setups.</li>
+                    <li>Sparked long-term career in software development through hands-on problem solving in high-pressure environments.</li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
 
     <script src="app.js"></script>
 </body>

@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "terraform_backend" {
   force_destroy = true
 
   # Enforce public access block for security
-  acl = "private" 
+  acl = "private"
 
   tags = {
     Name = "CloudResumeTFState"
@@ -31,9 +31,9 @@ terraform {
 
 # Add this resource block to your root configuration
 resource "aws_dynamodb_table" "terraform_locks" {
-  name             = "terraform-locks" # MUST MATCH the name in the backend block
-  hash_key         = "LockID"
-  billing_mode     = "PAY_PER_REQUEST"
+  name         = "terraform-locks" # MUST MATCH the name in the backend block
+  hash_key     = "LockID"
+  billing_mode = "PAY_PER_REQUEST"
 
   attribute {
     name = "LockID"
@@ -52,6 +52,6 @@ module "backend" {
 
 module "frontend" {
   source      = "./modules/frontend"
-  domain_name = "example.com" # Placeholder: Terraform needs a value, even if commented out.
+  domain_name = "example.com"                                                   # Placeholder: Terraform needs a value, even if commented out.
   api_url     = "https://3cugs71ej9.execute-api.us-east-1.amazonaws.com/visits" # YOUR actual API URL
 }
