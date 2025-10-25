@@ -126,3 +126,23 @@ h2 {
 .fas, .fab {
     margin-right: 5px;
 }
+
+/* STYLE FOR THE ARCHITECTURE FOOTNOTE */
+.meta-note {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 1px solid #b3d9ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 15px auto; /* Centers the note */
+    width: 80%; /* Limits width slightly */
+    font-size: 0.9em;
+    text-align: center;
+}
+.meta-note p {
+    margin: 0;
+}
+.meta-note a {
+    color: #0056b3;
+    font-weight: bold;
+    text-decoration: none;
+}
