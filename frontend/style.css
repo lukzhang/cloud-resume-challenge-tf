@@ -127,22 +127,22 @@ h2 {
     margin-right: 5px;
 }
 
-/* STYLE FOR THE ARCHITECTURE FOOTNOTE */
+/* UPDATED STYLE FOR THE ARCHITECTURE FOOTNOTE */
 .meta-note {
-    background-color: #f0f8ff; /* Light blue background */
-    border: 1px solid #b3d9ff;
+    /* CHANGING BACKGROUND TO BE LIGHT/SEMI-TRANSPARENT */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+    color: white; /* Text remains white */
     padding: 10px 20px;
     border-radius: 5px;
-    margin: 15px auto; /* Centers the note */
-    width: 80%; /* Limits width slightly */
+    margin-top: 20px;
     font-size: 0.9em;
     text-align: center;
 }
-.meta-note p {
-    margin: 0;
-}
+
 .meta-note a {
-    color: #0056b3;
+    color: #ffc107; /* Contrasting yellow link text */
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
 }
+/* Rest of style.css remains the same */
