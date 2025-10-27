@@ -1,3 +1,1 @@
-view the resume website hosted on cloudfront here: https://dulfiq23fj1i.cloudfront.net/
-
-sorry, no https as I dont have a domain yet
+view the resume website hosted on cloudfront here: https://www.luke-zhang-aws.com/
